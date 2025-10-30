@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	height: 100vh;
+	align-items: center;
+	background-color: #f4f4f4;
+}
+
+body>* {
+	flex: 1;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	max-height: 15%;
+}
+
+.scoreboard {
+	display: flex;
+	gap: 100px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	max-height: 15%;
+}
+
+.scoreboard>div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.game-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.game-area>.round-move {
+	display: flex;
+	align-items: center;
+	gap: 150px;
+}
+
+.game-area>.round-move>img {
+	width: 200px;
+	height: 200px;
+}
+
+.game-area>.round-result {
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+}
+
+.controler {
+	display: flex;
+	min-width: 60%;
+	max-height: 15%;
+	gap: 25px;
+	justify-content: center;
+	align-items: center;
+}
+
+.controler>button {
+	background-color: #ffffff;
+	border: solid 2px #0077ff;
+	width: 150px;
+	height: 150px;
+}
+
+.controler>button:hover {
+	background-color: #005fcc;
+}
+
+.controler>button>img {
+	width: 100px;
+	height: 100px;
+}
+
+.overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(30, 30, 30 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 900;
+	backdrop-filter: blur(4px);
+}
+
+.game-result {
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 2rem;
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+}
+
+.game-result>.text-result {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	color: #333;
+	margin-bottom: 1.5rem;
+}
+
+.game-result>button {
+	background: #0077ff;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+}
+
+.game-result>button:hover {
+	background: #005fcc;
+}
